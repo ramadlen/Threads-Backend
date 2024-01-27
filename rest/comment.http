@@ -1,0 +1,15 @@
+GET http://localhost:3000/comments HTTP/1.1
+
+###
+GET http://localhost:3000/comments?parentId=5ab60e44374034105a795b5 HTTP/1.1
+
+###
+
+POST http://localhost:3000/comments HTTP/1.1
+content-type: application/json
+
+{
+    "text": "Penggabungan Komen Fix",
+    "userId": "65ab4a9f5f8071aa1d109e4a",
+    "parentId": "65ab60e44374034105a795b5"
+}
